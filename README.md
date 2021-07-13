@@ -46,12 +46,12 @@ torch Implementation of ["Face Photo-Sketch Synthesis via Intra-Domain Enhanceme
 #### Example pairs of input forensic images on a variety of real-world forensic photos for face sketch synthesis using our proposed IDE-based method. 
 
 <div align="center">
-	<img src="imgs/result3.PNG" width="80%" height="50%"/>
+	<img src="imgs/result3.PNG" width="60%"/>
 </div>
 </a>
 
 #### Comparison of celebrity photos retrieved from the Internet. (a) Input photos. (b) Results based on CUFSF. (c) Results based on CUFS.
 <div align="center">
-	<img src="imgs/result4.PNG" width="80%" height="50%"/>
+	<img src="imgs/result4.PNG" width="60%"/>
 </div>
 </a>
