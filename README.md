@@ -13,13 +13,13 @@ torch Implementation of ["Face Photo-Sketch Synthesis via Intra-Domain Enhanceme
 # The architecture of the Generator Network.
 
 <div align="center">
-	<img src="imgs/G.PNG" width="80%" height="20%"/>
+	<img src="imgs/G.PNG" width="60%"/>
 </div>
 </a>
 # The architecture of the Discriminator Network
 
 <div align="center">
-	<img src="imgs/D.PNG" width="500"/>
+	<img src="imgs/D.PNG" width="300"/>
 </div>
 </a>
 
