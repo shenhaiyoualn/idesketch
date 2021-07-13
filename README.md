@@ -20,7 +20,7 @@ torch Implementation of ["Face Photo-Sketch Synthesis via Intra-Domain Enhanceme
 #### The architecture of the Discriminator Network
 
 <div align="center">
-	<img src="imgs/D.PNG" width="800" height="600"/>
+	<img src="imgs/D.PNG" width="300"/>
 </div>
 </a>
 
