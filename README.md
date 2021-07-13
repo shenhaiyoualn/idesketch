@@ -7,12 +7,12 @@ Pytorch Implementation of ["Face Photo-Sketch Synthesis via Intra-Domain Enhance
 Generator Network
 <a href="http://tensorlayer.readthedocs.io">
 <div align="center">
-	<img src="img/Generator.PNG" width="80%" height="10%"/>
+	<img src="img/G.PNG" width="80%" height="10%"/>
 </div>
 </a>
 Discriminator Network
 <div align="center">
-	<img src="img/Dator.PNG" width="80%" height="10%"/>
+	<img src="img/D.PNG" width="80%" height="10%"/>
 </div>
 </a>
 
