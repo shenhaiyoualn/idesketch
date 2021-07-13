@@ -53,4 +53,7 @@ torch Implementation of ["Face Photo-Sketch Synthesis via Intra-Domain Enhanceme
 	<img src="imgs/result4.PNG" width="60%"/>
 </div>
 </a>
+
 More synthesis results are available [Online](http://chunleipeng.com/MrFSPS/MrFSPS_Sketch.html)
+
+[Online](http://chunleipeng.com/MrFSPS/MrFSPS_Sketch.html)
