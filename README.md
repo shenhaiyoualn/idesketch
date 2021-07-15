@@ -2,6 +2,8 @@
 
 torch Implementation of ["Face Photo-Sketch Synthesis via Intra-Domain Enhancement"](https://github.com/shenhaiyoualn/idesketch)
 
+### More synthesis results are available [Online](https://github.com/shenhaiyoualn/fine-sketch)
+
 ### The framework of our proposed Intra-Domain  Enhancement (IDE) method
 <div align="center">
 	<img src="imgs/IDE.PNG" width="80%" height="10%"/>
@@ -53,4 +55,4 @@ torch Implementation of ["Face Photo-Sketch Synthesis via Intra-Domain Enhanceme
 </div>
 </a>
 
-### More synthesis results are available [Online](https://github.com/shenhaiyoualn/fine-sketch)
+
