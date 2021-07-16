@@ -1,6 +1,6 @@
 # Face Photo-Sketch Synthesis via Intra-Domain Enhancement
 ## CUFSF
-### —————Photo————IDE———Original Sketch——Photo————IDE———Original Sketch
+### ———————Photo————IDE———Original Sketch——Photo————IDE———Original Sketch
 <div align="center">
 	<img src="CUFSF/Photo/14.jpg" width="125"/>
 	<img src="CUFSF/IDE/14.png" width="125"/>
