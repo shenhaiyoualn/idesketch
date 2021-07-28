@@ -17,7 +17,7 @@ Face photo-sketch synthesis plays an increasingly important role in the field of
 ### The architecture of the Generator Network
 
 <div align="center">
-	<img src="imgs/G.PNG" width="80%" height="20%"/>
+	<img src="imgs/Generator.PNG" width="80%" height="20%"/>
 </div>
 </a>
 
