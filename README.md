@@ -24,7 +24,7 @@ Face photo-sketch synthesis plays an increasingly important role in the field of
 ### The architecture of the Discriminator Network
 
 <div align="center">
-	<img src="imgs/Discriminator.PNG" width="300"/>
+	<img src="imgs/Discriminator.png" width="300"/>
 </div>
 </a>
 
