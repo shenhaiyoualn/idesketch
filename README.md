@@ -10,7 +10,7 @@ Face photo-sketch synthesis plays an increasingly important role in the field of
 
 ### The framework of our proposed Intra-Domain  Enhancement (IDE) method
 <div align="center">
-	<img src="imgs/IDE.PNG" width="80%" height="10%"/>
+	<img src="imgs/ide.PNG" width="80%" height="10%"/>
 </div>
 </a>
 
