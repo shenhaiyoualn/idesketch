@@ -29,11 +29,8 @@ Face photo-sketch synthesis plays an increasingly important role in the field of
 </a>
 
 ### Acknowledgments
+Our code is inspired by [mmediting](https://github.com/open-mmlab/mmediting)
 
-<div align="center">
-	Our code is inspired by [mmediting](https://github.com/open-mmlab/mmediting)
-</div>
-</a>
 
 
 
