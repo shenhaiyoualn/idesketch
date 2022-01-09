@@ -27,8 +27,13 @@ Face photo-sketch synthesis plays an increasingly important role in the field of
 	<img src="imgs/Discriminator.png" width="300"/>
 </div>
 </a>
+
 ### Acknowledgments
 
-Our code is inspired by [mmediting](https://github.com/open-mmlab/mmediting)
+<div align="center">
+	Our code is inspired by [mmediting](https://github.com/open-mmlab/mmediting)
+</div>
+</a>
+
 
 
