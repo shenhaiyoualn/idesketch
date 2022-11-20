@@ -141,14 +141,14 @@ if __name__ == '__main__':
     setup(
         name='mmedit',
         version=get_version(),
-        description='OpenMMLab Image and Video Editing Toolbox and Benchmark',
+        description='',
         long_description=readme(),
         long_description_content_type='text/markdown',
         maintainer='MMEditing Authors',
-        maintainer_email='openmmlab@gmail.com',
+        maintainer_email='',
         keywords='computer vision, inpainting, matting, '
         'super-resolution, generation',
-        url='https://github.com/open-mmlab/mmediting',
+        url='https://github.com/shenhaiyoualn/idesketch',
         packages=find_packages(exclude=('configs', 'tools', 'demo')),
         include_package_data=True,
         classifiers=[
