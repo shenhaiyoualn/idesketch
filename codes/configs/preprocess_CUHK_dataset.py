@@ -12,34 +12,7 @@ import numpy as np
 
 
 def main_extract_subimages(args):
-    """A multi-thread tool to crop large images to sub-images for faster IO.
-
-    It is used for DIV2K dataset.
-
-    opt (dict): Configuration dict. It contains:
-        n_thread (int): Thread number.
-        compression_level (int):  CV_IMWRITE_PNG_COMPRESSION from 0 to 9.
-            A higher value means a smaller size and longer compression time.
-            Use 0 for faster CPU decompression. Default: 3, same in cv2.
-
-        input_folder (str): Path to the input folder.
-        save_folder (str): Path to save folder.
-        crop_size (int): Crop size.
-        step (int): Step for overlapped sliding window.
-        thresh_size (int): Threshold size. Patches whose size is lower
-            than thresh_size will be dropped.
-
-    Usage:
-        For each folder, run this script.
-        Typically, there are four folders to be processed for DIV2K dataset.
-            DIV2K_train_HR
-            DIV2K_train_LR_bicubic/X2
-            DIV2K_train_LR_bicubic/X3
-            DIV2K_train_LR_bicubic/X4
-        After process, each sub_folder should have the same number of
-        subimages.
-        Remember to modify opt configurations according to your settings.
-    """
+    
 
     opt = {}
     opt['n_thread'] = args.n_thread
@@ -205,46 +178,7 @@ def make_lmdb(data_path,
               compress_level=1,
               multiprocessing_read=False,
               n_thread=40):
-    """Make lmdb.
 
-    Contents of lmdb. The file structure is:
-    example.lmdb
-    ├── data.mdb
-    ├── lock.mdb
-    ├── meta_info.txt
-
-    The data.mdb and lock.mdb are standard lmdb files and you can refer to
-    https://lmdb.readthedocs.io/en/release/ for more details.
-
-    The meta_info.txt is a specified txt file to record the meta information
-    of our datasets. It will be automatically created when preparing
-    datasets by our provided dataset tools.
-    Each line in the txt file records 1)image name (with extension),
-    2)image shape, and 3)compression level, separated by a white space.
-
-    For example, the meta information could be:
-    `000_00000000.png (720,1280,3) 1`, which means:
-    1) image name (with extension): 000_00000000.png;
-    2) image shape: (720,1280,3);
-    3) compression level: 1
-
-    We use the image name without extension as the lmdb key.
-
-    If `multiprocessing_read` is True, it will read all the images to memory
-    using multiprocessing. Thus, your server needs to have enough memory.
-
-    Args:
-        data_path (str): Data path for reading images.
-        lmdb_path (str): Lmdb save path.
-        img_path_list (str): Image path list.
-        keys (str): Used for lmdb keys.
-        batch (int): After processing batch images, lmdb commits.
-            Default: 5000.
-        compress_level (int): Compress level when encoding images. Default: 1.
-        multiprocessing_read (bool): Whether use multiprocessing to read all
-            the images to memory. Default: False.
-        n_thread (int): For multiprocessing.
-    """
     assert len(img_path_list) == len(keys), (
         'img_path_list and keys should have the same length, '
         f'but got {len(img_path_list)} and {len(keys)}')
