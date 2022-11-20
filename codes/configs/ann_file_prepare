@@ -4,9 +4,6 @@ from PIL import Image
 
 
 def generate_meta_info_div2k():
-    """Generate meta info for DIV2K dataset.
-    """
-
     gt_folder = '/home/sd01/mmediting/data/CUHKstage1/CUHKstage1_train_HR_sub/'
     meta_info_txt = '/home/sd01/mmediting/data/CUHKstage1/meta_info_CUHKstage1sub_GT.txt'
 
