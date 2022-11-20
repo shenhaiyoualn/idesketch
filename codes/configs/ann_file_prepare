@@ -4,8 +4,8 @@ from PIL import Image
 
 
 def generate_meta_info_div2k():
-    gt_folder = '/home/sd01/mmediting/data/CUHKstage1/CUHKstage1_train_HR_sub/'
-    meta_info_txt = '/home/sd01/mmediting/data/CUHKstage1/meta_info_CUHKstage1sub_GT.txt'
+    gt_folder = 'idesketch/data/CUHK/CUHK_train_HR_sub/'
+    meta_info_txt = 'idesketch/data/CUHK/meta_info_CUHKsub_GT.txt'
 
     img_list = sorted(list(mmcv.scandir(gt_folder)))
 
