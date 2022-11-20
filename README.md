@@ -17,10 +17,10 @@ Face photo-sketch synthesis plays an increasingly important role in the field of
 ### The architecture of the Generator Network
 
 <div align="center">
-	<img src="imgs/generator.png" alt="(a) Architecture of the intra-domain adaption generator network. The input to this stage is a rough sketch, which is used to synthesize the final result. (b) Structure of the FAM used in this paper" width="80%" height="20%"/>
+	<img src="imgs/generator.png" width="80%" height="20%"/>
 </div>
 </a>
-
+(a) Architecture of the intra-domain adaption generator network. The input to this stage is a rough sketch, which is used to synthesize the final result. (b) Structure of the FAM used in this paper
 
 ### Acknowledgments
 Our code is inspired by [mmediting](https://github.com/open-mmlab/mmediting)
