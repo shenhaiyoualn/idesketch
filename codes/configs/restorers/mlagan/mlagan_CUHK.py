@@ -1,4 +1,4 @@
-exp_name = 'mlagan_x2c64b16_g1_300k_CUHK'
+exp_name = 'mlagan_CUHK'
 
 scale = 2
 # model settings
@@ -95,7 +95,7 @@ data = dict(
         times=1000,
         dataset=dict(
             type=train_dataset_type,
-            lq_folder='data/CUHK/CUHK_train_LR_bicubic/X2_sub',
+            lq_folder='data/CUHK/CUHK_train_LR/X2_sub',
             gt_folder='data/CUHK/CUHK_train_HR_sub',
             ann_file='data/CUHK/meta_info_CUHKsub_GT.txt',
             pipeline=train_pipeline,
@@ -105,7 +105,7 @@ data = dict(
     val_workers_per_gpu=1,
     val=dict(
         type=val_dataset_type,
-        lq_folder='./data/CUHK/CUHK_test_LR_bicubic/X2',
+        lq_folder='./data/CUHK/CUHK_test_LR/X2',
         gt_folder='./data/CUHK/CUHK_test_HR',
         pipeline=test_pipeline,
         scale=scale,
@@ -113,7 +113,7 @@ data = dict(
     # test
     test=dict(
         type=val_dataset_type,
-        lq_folder='./data/CUHK/CUHK_test_LR_bicubic/X2',
+        lq_folder='./data/CUHK/CUHK_test_LR/X2',
         gt_folder='./data/CUHK/CUHK_test_HR',
         pipeline=test_pipeline,
         scale=scale,
