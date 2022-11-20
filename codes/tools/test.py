@@ -13,7 +13,7 @@ from mmedit.models import build_model
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='mmediting tester')
+    parser = argparse.ArgumentParser(description='test')
     parser.add_argument('config', help='test config file path')
     parser.add_argument('checkpoint', help='checkpoint file')
     parser.add_argument('--seed', type=int, default=None, help='random seed')
