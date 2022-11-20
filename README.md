@@ -1,6 +1,7 @@
 ## Face Photo-Sketch Synthesis via Intra-Domain Enhancement
 
-We provide `PyTorch` implementations for our KBS2022 paper [`Face Photo-Sketch Synthesis via Intra-Domain Enhancement`](https://www.sciencedirect.com/science/article/pii/S0950705122011194) [`Paper@IEEE`](https://www.sciencedirect.com/science/article/pii/S0950705122011194)   [`Code@Github`](https://github.com/shenhaiyoualn/idesketch)  
+We provide `PyTorch` implementations for our KBS2022 paper [`Face Photo-Sketch Synthesis via Intra-Domain Enhancement`](https://www.sciencedirect.com/science/article/pii/S0950705122011194) 
+[`Paper@IEEE`](https://www.sciencedirect.com/science/article/pii/S0950705122011194)   [`Code@Github`](https://github.com/shenhaiyoualn/idesketch)  
 
 
 ## Abstract
