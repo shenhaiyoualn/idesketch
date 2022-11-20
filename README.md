@@ -17,7 +17,9 @@ Face photo-sketch synthesis plays an increasingly important role in the field of
 ### The architecture of the Generator Network
 
 <div align="center">
-	<img src="imgs/generator.png" width="80%" height="20%"/>
+	<img src="imgs/generator.png" width="80%" height="20%"/  alt="(a) Architecture of the intra-domain adaption generator network. The input to this stage is a rough sketch, which is used to synthesize the final result. (b) Structure of the FAM used in this paper">
+	
+
 </div>
 </a>
 
