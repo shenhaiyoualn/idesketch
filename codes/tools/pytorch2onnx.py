@@ -119,7 +119,7 @@ def pytorch2onnx(model,
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Convert MMediting to ONNX')
+    parser = argparse.ArgumentParser(description='Convert to ONNX')
     parser.add_argument('config', help='test config file path')
     parser.add_argument('checkpoint', help='checkpoint file')
     parser.add_argument(
@@ -153,7 +153,7 @@ if __name__ == '__main__':
     if model_type == 'mattor' and args.trimap_path is None:
         raise ValueError('Please set `--trimap-path` to convert mattor model.')
 
-    assert args.opset_version == 11, 'MMEditing only support opset 11 now'
+    assert args.opset_version == 11, 'only support opset 11 now'
 
     config = mmcv.Config.fromfile(args.config)
     config.model.pretrained = None
