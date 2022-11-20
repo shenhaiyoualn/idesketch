@@ -25,6 +25,27 @@ Framework of the proposed intra-domain enhancement (IDE) based method. The overa
 </a>
 (a) Architecture of the intra-domain adaption generator network. The input to this stage is a rough sketch, which is used to synthesize the final result. (b) Structure of the FAM used in this paper.
 
+## Citation
+
+ If you use this code for your research, please cite our paper. 
+
+> Peng, C., Zhang, C., Liu, D., Wang, N., & Gao, X. (2022). Face photo-sketch synthesis via intra-domain enhancement. Knowledge-Based Systems, 110026. (Accepted)
+
+**bibtex:**
+
+```latex
+@article{peng2022face,
+  title={Face photo-sketch synthesis via intra-domain enhancement},
+  author={Peng, Chunlei and Zhang, Congyu and Liu, Decheng and Wang, Nannan and Gao, Xinbo},
+  journal={Knowledge-Based Systems},
+  pages={110026},
+  year={2022},
+  publisher={Elsevier}
+}
+```
+
+
+
 ### Acknowledgments
 Our code is inspired by [mmediting](https://github.com/open-mmlab/mmediting)
 
