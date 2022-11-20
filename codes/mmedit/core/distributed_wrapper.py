@@ -7,44 +7,7 @@ from torch.cuda._utils import _get_device_index
 
 @MODULE_WRAPPERS.register_module()
 class DistributedDataParallelWrapper(nn.Module):
-    """A DistributedDataParallel wrapper for models in MMediting.
-
-    In MMedting, there is a need to wrap different modules in the models
-    with separate DistributedDataParallel. Otherwise, it will cause
-    errors for GAN training.
-    More specific, the GAN model, usually has two sub-modules:
-    generator and discriminator. If we wrap both of them in one
-    standard DistributedDataParallel, it will cause errors during training,
-    because when we update the parameters of the generator (or discriminator),
-    the parameters of the discriminator (or generator) is not updated, which is
-    not allowed for DistributedDataParallel.
-    So we design this wrapper to separately wrap DistributedDataParallel
-    for generator and discriminator.
-
-    In this wrapper, we perform two operations:
-    1. Wrap the modules in the models with separate MMDistributedDataParallel.
-        Note that only modules with parameters will be wrapped.
-    2. Do scatter operation for 'forward', 'train_step' and 'val_step'.
-
-    Note that the arguments of this wrapper is the same as those in
-    `torch.nn.parallel.distributed.DistributedDataParallel`.
-
-    Args:
-        module (nn.Module): Module that needs to be wrapped.
-        device_ids (list[int | `torch.device`]): Same as that in
-            `torch.nn.parallel.distributed.DistributedDataParallel`.
-        dim (int, optional): Same as that in the official scatter function in
-            pytorch. Defaults to 0.
-        broadcast_buffers (bool): Same as that in
-            `torch.nn.parallel.distributed.DistributedDataParallel`.
-            Defaults to False.
-        find_unused_parameters (bool, optional): Same as that in
-            `torch.nn.parallel.distributed.DistributedDataParallel`.
-            Traverse the autograd graph of all tensors contained in returned
-            value of the wrapped module’s forward function. Defaults to False.
-        kwargs (dict): Other arguments used in
-            `torch.nn.parallel.distributed.DistributedDataParallel`.
-    """
+    
 
     def __init__(self,
                  module,
