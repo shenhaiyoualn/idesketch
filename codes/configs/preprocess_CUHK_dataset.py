@@ -28,9 +28,9 @@ def main_extract_subimages(args):
 
     for scale in [2]:
         opt['input_folder'] = osp.join(args.data_root,
-                                       f'CUHK_train_LR_bicubic/X{scale}')
+                                       f'CUHK_train_LR/X{scale}')
         opt['save_folder'] = osp.join(args.data_root,
-                                      f'CUHK_train_LR_bicubic/X{scale}_sub')
+                                      f'CUHK_train_LR/X{scale}_sub')
         opt['crop_size'] = args.crop_size // scale
         opt['step'] = args.step // scale
         opt['thresh_size'] = args.thresh_size // scale
@@ -89,7 +89,7 @@ def worker(path, opt):
     thresh_size = opt['thresh_size']
     img_name, extension = osp.splitext(osp.basename(path))
 
-    # remove the X2, x3, x4 and x8 in the filename for DIV2K
+
     img_name = re.sub('x[2]', '', img_name)
 
     img = mmcv.imread(path, flag='unchanged')
@@ -119,41 +119,23 @@ def worker(path, opt):
     return process_info
 
 
-def make_lmdb_for_div2k(data_root):
-    """Create lmdb files for DIV2K dataset.
-
-    Args:
-        data_root (str): Data root path.
-
-    Usage:
-        Typically, there are four folders to be processed for DIV2K dataset.
-            DIV2K_train_HR_sub
-            DIV2K_train_LR_bicubic/X2_sub
-            DIV2K_train_LR_bicubic/X3_sub
-            DIV2K_train_LR_bicubic/X4_sub
-        Remember to modify opt configurations according to your settings.
-    """
+def make_lmdb_for_CUHK(data_root):
 
     folder_paths = [
         osp.join(data_root, 'CUHK_train_HR_sub'),
-        osp.join(data_root, 'CUHK_train_LR_bicubic/X2_sub'),
-     #   osp.join(data_root, 'DIV2K_train_LR_bicubic/X3_sub'),
-     #  osp.join(data_root, 'DIV2K_train_LR_bicubic/X4_sub')
+        osp.join(data_root, 'CUHK_train_LR/X2_sub'),
     ]
     lmdb_paths = [
         osp.join(data_root, 'CUHK_train_HR_sub.lmdb'),
-        osp.join(data_root, 'CUHK_train_LR_bicubic_X2_sub.lmdb'),
-    #  osp.join(data_root, 'DIV2K_train_LR_bicubic_X3_sub.lmdb'),
-    # osp.join(data_root, 'DIV2K_train_LR_bicubic_X4_sub.lmdb')
+        osp.join(data_root, 'CUHK_train_LR_X2_sub.lmdb'),
     ]
 
     for folder_path, lmdb_path in zip(folder_paths, lmdb_paths):
-        img_path_list, keys = prepare_keys_div2k(folder_path)
+        img_path_list, keys = prepare_keys_CUHK(folder_path)
         make_lmdb(folder_path, lmdb_path, img_path_list, keys)
 
 
-def prepare_keys_div2k(folder_path):
-    """Prepare image path list and keys for DIV2K dataset.
+def prepare_keys_CUHK(folder_path):
 
     Args:
         folder_path (str): Folder path.
@@ -275,7 +257,7 @@ def read_img_worker(path, key, compress_level):
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description='Prepare DIV2K dataset',
+        description='Prepare CUHK dataset',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--data-root', help='dataset root')
     parser.add_argument(
@@ -314,4 +296,4 @@ if __name__ == '__main__':
     main_extract_subimages(args)
     # prepare lmdb files if necessary
     if args.make_lmdb:
-        make_lmdb_for_div2k(args.data_root)
+        make_lmdb_for_CUHK(args.data_root)
