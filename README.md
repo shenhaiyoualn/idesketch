@@ -1,6 +1,7 @@
 ## Face Photo-Sketch Synthesis via Intra-Domain Enhancement
 
 We provide `PyTorch` implementations for our KBS2022 paper [`Face Photo-Sketch Synthesis via Intra-Domain Enhancement`](https://www.sciencedirect.com/science/article/pii/S0950705122011194) 
+
 [`Paper@IEEE`](https://www.sciencedirect.com/science/article/pii/S0950705122011194)   [`Code@Github`](https://github.com/shenhaiyoualn/idesketch)  
 
 
@@ -62,8 +63,19 @@ Framework of the proposed intra-domain enhancement (IDE) based method. The overa
 ### Preprocessing steps
 
 If you need to use your own data, please align all faces by eyes.
-We have prepared two script files under the /configs folder to process the data.
-
+Typically, there are four folders to be processed for CUHK dataset.
+            CUHK_train_HR
+            CUHK_train_LR/X2
+	    CUHK_test_HR
+            CUHK_test_LR/X2
+The HR folder is the original image, and the LR folder is the result of inter-domain face generation, each sub_folder should have the same number of subimages.
+Remember to modify the config file according to your settings.
+We have prepared the script files under the /configs folder to process the data.
+  ```
+  cd codes
+  python preprocess_CUHK_dataset.py
+  python ann_file_prepare.py
+  ```
 ### train/test
 
 * Download CUFS and CUFSF dataset and put it in the dataset directory
@@ -71,7 +83,6 @@ We have prepared two script files under the /configs folder to process the data.
 * Train a model
 
   ```
-  cd codes
   CUDA_VISIBLE_DEVICES=0  ./tools/dist_train.sh configs/restorers/mlagan/mlagan_CUHK.py 1
   ```
 
