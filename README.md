@@ -13,6 +13,7 @@ Face photo-sketch synthesis plays an increasingly important role in the field of
 	<img src="imgs/ide.PNG" width="80%" height="10%"/>
 </div>
 </a>
+Framework of the proposed intra-domain enhancement (IDE) based method. The overall structure is divided into two parts: inter-domain face generation (a) and intra-domain face enhancement (b).
 
 ### The architecture of the Generator Network
 
@@ -20,7 +21,7 @@ Face photo-sketch synthesis plays an increasingly important role in the field of
 	<img src="imgs/generator.png" width="80%" height="20%"/>
 </div>
 </a>
-(a) Architecture of the intra-domain adaption generator network. The input to this stage is a rough sketch, which is used to synthesize the final result. (b) Structure of the FAM used in this paper
+(a) Architecture of the intra-domain adaption generator network. The input to this stage is a rough sketch, which is used to synthesize the final result. (b) Structure of the FAM used in this paper.
 
 ### Acknowledgments
 Our code is inspired by [mmediting](https://github.com/open-mmlab/mmediting)
