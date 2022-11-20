@@ -1,5 +1,3 @@
-#CUDA_VISIBLE_DEVICES=0  ./tools/dist_train.sh configs/restorers/mlagan/mlagan_x2_300k_CUHK.py 1
-
 exp_name = 'mlagan_x2c64b16_g1_300k_CUHK'
 
 scale = 2
