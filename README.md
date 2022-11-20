@@ -63,13 +63,17 @@ Framework of the proposed intra-domain enhancement (IDE) based method. The overa
 ### Preprocessing steps
 
 If you need to use your own data, please align all faces by eyes.
+
 Typically, there are four folders to be processed for CUHK dataset.
+
             CUHK_train_HR
             CUHK_train_LR/X2
 	    CUHK_test_HR
             CUHK_test_LR/X2
+	   
 The HR folder is the original image, and the LR folder is the result of inter-domain face generation, each sub_folder should have the same number of subimages.
 Remember to modify the config file according to your settings.
+
 We have prepared the script files under the /configs folder to process the data.
   ```
   cd codes
