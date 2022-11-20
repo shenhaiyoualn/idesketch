@@ -1,6 +1,6 @@
 ## Face Photo-Sketch Synthesis via Intra-Domain Enhancement
 
-We provide `PyTorch` implementations for our KBS2022 paper [`IDEsketch`](https://ieeexplore.ieee.org/abstract/document/9845477): 
+We provide `PyTorch` implementations for our KBS2022 paper [`Face Photo-Sketch Synthesis via Intra-Domain Enhancement`](https://ieeexplore.ieee.org/abstract/document/9845477): 
 
 ## Abstract
 
@@ -11,6 +11,12 @@ Face photo-sketch synthesis plays an increasingly important role in the field of
 ### The framework of our proposed Intra-Domain  Enhancement (IDE) method
 <div align="center">
 	<img src="imgs/ide.PNG" width="80%" height="10%"/>
+</div>
+</a>
+### The architecture of the Generator Network
+
+<div align="center">
+	<img src="imgs/generator.png" width="80%" height="20%"/>
 </div>
 </a>
 
