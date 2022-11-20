@@ -144,7 +144,7 @@ if __name__ == '__main__':
         description='',
         long_description=readme(),
         long_description_content_type='text/markdown',
-        maintainer='MMEditing Authors',
+        maintainer='Authors',
         maintainer_email='',
         keywords='computer vision, inpainting, matting, '
         'super-resolution, generation',
