@@ -55,7 +55,7 @@ Framework of the proposed intra-domain enhancement (IDE) based method. The overa
 
   ```
   pip3 install openmim
-  mim install mmcv-full
+  pip install mmcv-full
   pip3 install -e
   ```
 
