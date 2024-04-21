@@ -30,7 +30,7 @@ Framework of the proposed intra-domain enhancement (IDE) based method. The overa
 
 - Linux 
 - Python 3.6
-- MMCV + MIM
+- MMCV 
 - Pytorch
 - NVIDIA GPU + CUDA + CuDNN
 
