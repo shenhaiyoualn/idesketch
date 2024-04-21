@@ -38,27 +38,18 @@ Framework of the proposed intra-domain enhancement (IDE) based method. The overa
 
 ### Installation
 
-* Create a conda environment and activate it
-  ```
-  conda create --name idesketch python=3.6 -y
-  conda activate idesketch
-  ```
-  
 * Clone this repo: 
 
   ```
   git clone https://github.com/shenhaiyoualn/idesketch
-  cd idesketch
+  cd  idesketch/codes
   ```
   
-* Install all the dependencies by:
-
+* Create a conda environment and activate it
   ```
-  pip3 install openmim
-  pip install mmcv-full
-  pip3 install -e
+  conda env create -f environment.yml
+  conda activate idesketch
   ```
-
 
 ### Preprocessing steps
 
