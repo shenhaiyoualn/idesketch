@@ -84,7 +84,7 @@ We have prepared the script files under the /configs folder to process the data.
 * We provide testing scripts to evaluate a whole dataset, xxx.pth represents the model you trained.
 
   ```
-  python tools/test.py configs/example_config.py work_dirs/xxx.pth  --save-path work_dirs/results/
+  python tools/test.py configs/restorers/mlagan/mlagan_CUHK.py work_dirs/xxx.pth  --save-path work_dirs/results/
   ```
   Then, the test results of the images will be automatically generated in the work_dirs/results/ directory.
 
